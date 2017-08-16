@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ZCAddtagToolBar">
+            <rect key="frame" x="0.0" y="0.0" width="455" height="125"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nl7-2s-S7B">
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="18Q-iW-Lbo">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="SRo-rv-HrK"/>
+                                <constraint firstAttribute="width" constant="30" id="he1-nh-Z3h"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="post-#"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6yI-mC-gH0">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="n8e-1a-T4I"/>
+                                <constraint firstAttribute="height" constant="30" id="pSL-Nv-or0"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="post-@"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="18Q-iW-Lbo" firstAttribute="top" secondItem="nl7-2s-S7B" secondAttribute="top" constant="7" id="9Fd-FE-Vm4"/>
+                        <constraint firstItem="6yI-mC-gH0" firstAttribute="leading" secondItem="nl7-2s-S7B" secondAttribute="leading" constant="7" id="Ybf-Y9-FH1"/>
+                        <constraint firstItem="18Q-iW-Lbo" firstAttribute="leading" secondItem="6yI-mC-gH0" secondAttribute="trailing" constant="22" id="eQ5-ch-UFH"/>
+                        <constraint firstItem="6yI-mC-gH0" firstAttribute="top" secondItem="nl7-2s-S7B" secondAttribute="top" constant="7" id="kXU-Kp-FQM"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="twy-KX-UNc">
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="RlC-Kr-FaV"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="nl7-2s-S7B" firstAttribute="top" secondItem="twy-KX-UNc" secondAttribute="bottom" id="2ia-gY-jdT"/>
+                <constraint firstAttribute="bottom" secondItem="nl7-2s-S7B" secondAttribute="bottom" id="B7k-Qe-dIM"/>
+                <constraint firstAttribute="bottom" secondItem="nl7-2s-S7B" secondAttribute="bottom" id="Ug0-uL-abj"/>
+                <constraint firstAttribute="trailing" secondItem="twy-KX-UNc" secondAttribute="trailing" id="WF9-Ak-ijN"/>
+                <constraint firstItem="nl7-2s-S7B" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="eA2-vY-w1o"/>
+                <constraint firstItem="twy-KX-UNc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="kap-9i-xKk"/>
+                <constraint firstItem="twy-KX-UNc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="rtO-48-ssV"/>
+                <constraint firstAttribute="trailing" secondItem="nl7-2s-S7B" secondAttribute="trailing" id="xmg-bR-oBn"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bottomview" destination="nl7-2s-S7B" id="vU6-IS-1fa"/>
+                <outlet property="topview" destination="twy-KX-UNc" id="OGJ-Kh-huN"/>
+            </connections>
+            <point key="canvasLocation" x="368.5" y="76.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="post-#" width="19" height="19"/>
+        <image name="post-@" width="19" height="19"/>
+    </resources>
+</document>
